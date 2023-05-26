@@ -4,8 +4,8 @@ import android.text.Html
 import android.text.Spanned
 
 object Utils {
-    const val appId = "439d4b804bc8187953eb36d2a8c26a02"
-    const val appIdA = "ec6d4b2f3e345a4df28f7eec09ae0144"
+    const val appId = ""
+    const val appIdA = ""
 
     fun convertToCelsius(temp: Double): String {
         val celsius = temp - 273.15
@@ -19,6 +19,10 @@ object Utils {
 
     fun getFlagImage(icon: String): String {
         return "https://flagsapi.com/${icon}/flat/64.png"
+    }
+
+    fun getSearchWeatherByCityUrl(cityName: String) : String {
+        return "find?q=${cityName}&appid=${appId}&units=metric"
     }
 
     fun getCurrentWeatherUrl(latitude: Double, longitude: Double): String {

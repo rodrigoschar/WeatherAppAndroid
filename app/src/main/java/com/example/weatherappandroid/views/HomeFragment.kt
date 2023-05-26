@@ -19,6 +19,7 @@ import com.example.weatherappandroid.retrofit.WeatherService
 import com.example.weatherappandroid.utils.CustomProgressDialog
 import com.example.weatherappandroid.utils.Utils
 import kotlinx.coroutines.*
+import okhttp3.internal.Util
 
 class HomeFragment : Fragment(), WeatherAdapter.IWeatherListener {
     private var _binding: FragmentHomeBinding? = null
@@ -64,7 +65,7 @@ class HomeFragment : Fragment(), WeatherAdapter.IWeatherListener {
     private suspend fun searchByCityName(cityName: String) {
         withContext(Dispatchers.IO) {
             try {
-                val url = "find?q=${cityName}&appid=${Utils.appId}&units=metric"
+                val url = Utils.getSearchWeatherByCityUrl(cityName)
                 val callApi = call.getRetrofit().create(WeatherApi::class.java).getWeatherByCityName(url).execute()
                 val result = callApi.body()
                 if (result != null) {
