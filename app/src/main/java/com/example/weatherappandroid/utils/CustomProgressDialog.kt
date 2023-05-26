@@ -44,7 +44,7 @@ class CustomProgressDialog(context: Context) {
         // Progress Bar Color
         setColorFilter(
             progressBar.indeterminateDrawable,
-            ResourcesCompat.getColor(context.resources, R.color.purple_200, null)
+            ResourcesCompat.getColor(context.resources, R.color.primary_color, null)
         )
 
         // Text Color

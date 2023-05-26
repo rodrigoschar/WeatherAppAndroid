@@ -11,4 +11,9 @@
     <string name="min_temp">Min Temp:</string>
     <string name="max_temp">Max Temp:</string>
     <string name="image_desc">Image Desc</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="location">Location:</string>
+    <string name="home">Home</string>
+    <string name="currentL">Location</string>
 </resources>

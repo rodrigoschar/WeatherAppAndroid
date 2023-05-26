@@ -80,7 +80,6 @@ class HomeFragment : Fragment(), WeatherAdapter.IWeatherListener {
                 Log.d("TAG", ex.printStackTrace().toString())
             }
         }
-
     }
 
     private fun setRecycler() {

@@ -23,4 +23,9 @@
             android:name="detail"
             app:argType="com.example.weatherappandroid.models.list" />
     </fragment>
+    <fragment
+        android:id="@+id/currentWeatherFragment"
+        android:name="com.example.weatherappandroid.views.CurrentWeatherFragment"
+        android:label="fragment_current_weather"
+        tools:layout="@layout/fragment_current_weather" />
 </navigation>

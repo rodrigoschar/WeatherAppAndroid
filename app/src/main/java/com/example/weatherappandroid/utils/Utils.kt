@@ -5,6 +5,7 @@ import android.text.Spanned
 
 object Utils {
     const val appId = "439d4b804bc8187953eb36d2a8c26a02"
+    const val appIdA = "ec6d4b2f3e345a4df28f7eec09ae0144"
 
     fun convertToCelsius(temp: Double): String {
         val celsius = temp - 273.15
@@ -18,6 +19,10 @@ object Utils {
 
     fun getFlagImage(icon: String): String {
         return "https://flagsapi.com/${icon}/flat/64.png"
+    }
+
+    fun getCurrentWeatherUrl(latitude: Double, longitude: Double): String {
+        return "https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${appIdA}"
     }
 
     fun setFirstTextBold(bold: String, normal: String): Spanned {
