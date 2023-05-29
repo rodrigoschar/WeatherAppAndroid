@@ -1,7 +1,8 @@
 # WeatherAppAndroid
-## This is a simple app to know how to call an api and deply the data in a recycler view
+## This is a simple app to know how to call an api and deploy the data in a recycler view
 
 Weather App is an app for searching the weather in any city around the world and in your corrunt location
+
 -You can search by city name and it will deply a list of the city name in differents countries.
 
 ![Screenshot 2023-05-26 at 17 21 17](https://github.com/rodrigoschar/WeatherAppAndroid/assets/104179043/dfae8adf-1f16-4d1f-9af2-813ad9663ced)
@@ -36,3 +37,5 @@ Features implemented in project:
   -Call api using retrofit
   
   -Show data in recyclerview
+  
+check ios site: https://github.com/rodrigoschar/WeatherAppiOS
